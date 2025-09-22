@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-// Function to display the main menu 
+// Function to display the user prompt
 void displayMenu() {
     cout << "\n==============================================" << endl;
     cout << "           GRAB FARE CALCULATOR" << endl;

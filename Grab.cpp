@@ -35,7 +35,7 @@ double calculateFare(int vehicleType, double distance) {
     return fare;
 }
 
-// Function to get vehicle name from type
+// Function to get vehicle name from type number
 string getVehicleName(int vehicleType) {
     switch(vehicleType) {
         case 1: return "GrabCar";

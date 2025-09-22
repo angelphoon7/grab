@@ -13,11 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: Install build tools
+      run: sudo apt-get update && sudo apt-get install -y g++
+    - name: Build
+      run: g++ -std=c++17 -O2 -Wall -Wextra -pedantic -o Grab Grab.cpp
+    - name: Run (non-interactive)
+      run: printf "1\n2\n0\n" | ./Grab
